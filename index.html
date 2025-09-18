@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Bob's</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>¡Bienvenido a <span class="brand-name" onclick="logSecretMessage()">BURGER TOWN!</span></h1>
+        <p>El mejor sabor de la ciudad está aquí.</p>
+    </header>
+
+    <main class="container">
+        <div class="cta-section">
+            <button class="cta-button" onclick="alert('ES HORA DE UNA HAMBURGUESA')">
+                ¡VEN A BURGER TOWN!
+            </button>
+        </div>
+
+        <div class="content-section">
+            <h2 id="image-headline">¡Una foto de una HAMBURGUESA!</h2>
+            
+            <div class="image-container">
+                
+                <img src="Imagenes/image.webp" alt="Una deliciosa hamburguesa">
+            </div>
+
+            <p>
+                Haz clic en la palabra mágica para una sorpresa de color: 
+                <span class="magic-word" onclick="changeColor()">¡¡¡ARROZ!!!</span>
+            </p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
